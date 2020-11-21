@@ -10,14 +10,15 @@
 \begin{document}
 
 
-\title{Efficiency and entropy production of selfish drivers: Disorder vs Interaction}
+\title{Efficiency and entropy production of selfish drivers}
 
 
 
 \date{\today}
 
-%\begin{abstract}
-%\end{abstract}
+\begin{abstract}
+Characterizing transport processes in a city system is important to have a better picture of efficiency and sustainability in such a complex system. In this study, we consider the process of movements of selfish drivers from their homes (origins) to work places (destinations) to see how interactions and randomness in the movements affect a measure of efficiency and entropy production in this process. Interactions are modelled by the effect of the flows on the local travel times, and by exploiting the travel information from the previous days. Here, the efficiency is computed by comparing the total travel time with the number of travels along the links. And, the entropy production is obtained by comparing the time intervals of leaving the origins and arriving at the destinations. We use  realistic models of population distributions and mobility laws for simulation of the movement process where at each step a driver moves to a neighbouring site which is closer to the destination or which is chosen randomly. We observe that interactions and a naive way of using the travel information without any coordination reduce the efficiency and increase the entropy production of the process. Moreover, the larger systems display smaller efficiencies for the same model parameters like the population density which limits the size of an efficient city. On the other hand, randomness in the movements can help to enhance the efficiency when the strength of interactions is large and congestion is high. We also find that the entropy production is a good order parameter to distinguish the low- and high-congestion phases. In the former phase, the entropy production grows monotonically with the probability of random moves whereas it displays a minimum in the congested phase; that is randomness in the movements can reduce the uncertainty in the destination time intervals. 
+\end{abstract}
 
 
 %\pacs{} 
@@ -157,18 +158,9 @@ As mentioned above, $\Delta T_O$ is the same for all the sites $a$.
 
 
 \section{Conclusion}\label{S3}
+In summary, numerical simulations of the movement process shows that in general interactions $(g,\lambda)$ increase the travel time, reduce the efficiency, and increase the entropy production. A selfish usage of information from the previous days results to smaller efficiency and velocity but at the same time enhance the mutual information between the origin and destination times of the trips. This enhancement in the mutual information probably is the only good point of such a movement process. Moreover, the efficiency and velocity display a (nontrivial) maximum for some randomness probability $\alpha^*$ depending on the strength of interactions. We also observed a qualitative change in the behaviour of the entropy production $\Delta S_D$ with the randomness parameter $\alpha$ as the parameter $g$ increases. In fact, for sufficiently large $g$, one can reduce the uncertainty in the destination times by introducing randomness in the movements. In other words, the response of $\Delta S_D$ to the randomness $\alpha$ can be used to discriminate the ordered and disordered phases of the flows in the system.
 
-\begin{itemize}
-
-\item randomness in the movements can reduce the uncertainty in the distribution of destination time intervals.
-
-\item variation of the entropy production with randomness in the movements can be used to identify the ordered and disordered phases of the flows.
-
-\item a selfish usage of information from the previous days results to smaller efficiency and velocity but at the same time can increase the mutual information between the origin and destination times of the trips.  Here some randomness in the movements can also increase the efficiency and velocity of the movements.
- 
-
-\end{itemize}
-
+An interesting observation is that the efficiency and velocity are significantly reduced by increasing the system linear size $L$ when the other model parameters are fixed even for the same density $M/N$ and $L/\Delta T_O$.  For instance here the efficiency and velocity scale roughly as $L^{-2.3}$ and $L^{-0.3}$, respectively. This means that under the above conditions the city size is limited by the efficiency or velocity of the movement process. An important quantity here is the link capacity $F^*_{ab}$, which controls the travel times for a give flow in link $(ab)$. In the numerical simulation, we set $F^*_{ab}=M/|E|$ independent of the link position in the lattice, whereas the population is not distributed homogeneously. The question then is how we should adjust the local capacities such that the efficiency approaches a desirable limit by increasing the size of the system.  
 
 
 
